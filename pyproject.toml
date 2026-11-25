@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "c21_paraflow_diff"
+version = "0.1.0"
+description = "Scores an AI-generated product bundle (PRD, flows, screens, design tokens) against a golden reference bundle."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Sakir Cimen" }]
+keywords = ["llm-evaluation", "regression-testing", "product-design", "ai-agents", "kutai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Quality Assurance",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/msakirc/c21-paraflow-diff"
+Repository = "https://github.com/msakirc/c21-paraflow-diff"
+Monorepo = "https://github.com/msakirc/kutai/tree/main/packages/c21_paraflow_diff"
+
+[tool.setuptools.packages.find]
+where = ["src"]
